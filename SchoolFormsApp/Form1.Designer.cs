@@ -44,11 +44,13 @@ namespace SchoolFormsApp
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnTestTeacher = new System.Windows.Forms.Button();
+            this.btnTestStudent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPushToTest
             // 
-            this.btnPushToTest.Location = new System.Drawing.Point(243, 319);
+            this.btnPushToTest.Location = new System.Drawing.Point(183, 293);
             this.btnPushToTest.Name = "btnPushToTest";
             this.btnPushToTest.Size = new System.Drawing.Size(343, 75);
             this.btnPushToTest.TabIndex = 29;
@@ -58,7 +60,7 @@ namespace SchoolFormsApp
             // 
             // txtTwitter
             // 
-            this.txtTwitter.Location = new System.Drawing.Point(367, 249);
+            this.txtTwitter.Location = new System.Drawing.Point(307, 241);
             this.txtTwitter.Name = "txtTwitter";
             this.txtTwitter.Size = new System.Drawing.Size(219, 26);
             this.txtTwitter.TabIndex = 28;
@@ -66,7 +68,7 @@ namespace SchoolFormsApp
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(215, 249);
+            this.label6.Location = new System.Drawing.Point(155, 241);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 20);
             this.label6.TabIndex = 27;
@@ -74,7 +76,7 @@ namespace SchoolFormsApp
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(367, 217);
+            this.txtPhone.Location = new System.Drawing.Point(307, 209);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(219, 26);
             this.txtPhone.TabIndex = 26;
@@ -82,7 +84,7 @@ namespace SchoolFormsApp
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(215, 217);
+            this.label7.Location = new System.Drawing.Point(155, 209);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 20);
             this.label7.TabIndex = 25;
@@ -90,7 +92,7 @@ namespace SchoolFormsApp
             // 
             // txtZip
             // 
-            this.txtZip.Location = new System.Drawing.Point(367, 185);
+            this.txtZip.Location = new System.Drawing.Point(307, 177);
             this.txtZip.Name = "txtZip";
             this.txtZip.Size = new System.Drawing.Size(219, 26);
             this.txtZip.TabIndex = 24;
@@ -98,7 +100,7 @@ namespace SchoolFormsApp
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(215, 185);
+            this.label8.Location = new System.Drawing.Point(155, 177);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 20);
             this.label8.TabIndex = 23;
@@ -106,7 +108,7 @@ namespace SchoolFormsApp
             // 
             // txtState
             // 
-            this.txtState.Location = new System.Drawing.Point(367, 153);
+            this.txtState.Location = new System.Drawing.Point(307, 145);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(219, 26);
             this.txtState.TabIndex = 22;
@@ -114,7 +116,7 @@ namespace SchoolFormsApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(215, 153);
+            this.label3.Location = new System.Drawing.Point(155, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 21;
@@ -122,7 +124,7 @@ namespace SchoolFormsApp
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(367, 121);
+            this.txtCity.Location = new System.Drawing.Point(307, 113);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(219, 26);
             this.txtCity.TabIndex = 20;
@@ -130,7 +132,7 @@ namespace SchoolFormsApp
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(215, 121);
+            this.label4.Location = new System.Drawing.Point(155, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 20);
             this.label4.TabIndex = 19;
@@ -138,7 +140,7 @@ namespace SchoolFormsApp
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(367, 89);
+            this.txtAddress.Location = new System.Drawing.Point(307, 81);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(219, 26);
             this.txtAddress.TabIndex = 18;
@@ -146,7 +148,7 @@ namespace SchoolFormsApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 89);
+            this.label2.Location = new System.Drawing.Point(155, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 20);
             this.label2.TabIndex = 17;
@@ -154,7 +156,7 @@ namespace SchoolFormsApp
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(367, 57);
+            this.txtName.Location = new System.Drawing.Point(307, 49);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(219, 26);
             this.txtName.TabIndex = 16;
@@ -162,17 +164,39 @@ namespace SchoolFormsApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(215, 57);
+            this.label1.Location = new System.Drawing.Point(155, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 15;
             this.label1.Text = "School Name";
             // 
+            // btnTestTeacher
+            // 
+            this.btnTestTeacher.Location = new System.Drawing.Point(183, 374);
+            this.btnTestTeacher.Name = "btnTestTeacher";
+            this.btnTestTeacher.Size = new System.Drawing.Size(343, 70);
+            this.btnTestTeacher.TabIndex = 30;
+            this.btnTestTeacher.Text = "Test Teacher";
+            this.btnTestTeacher.UseVisualStyleBackColor = true;
+            this.btnTestTeacher.Click += new System.EventHandler(this.btnTestTeacher_Click);
+            // 
+            // btnTestStudent
+            // 
+            this.btnTestStudent.Location = new System.Drawing.Point(183, 450);
+            this.btnTestStudent.Name = "btnTestStudent";
+            this.btnTestStudent.Size = new System.Drawing.Size(343, 70);
+            this.btnTestStudent.TabIndex = 31;
+            this.btnTestStudent.Text = "Test Student";
+            this.btnTestStudent.UseVisualStyleBackColor = true;
+            this.btnTestStudent.Click += new System.EventHandler(this.btnTestStudent_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(681, 570);
+            this.Controls.Add(this.btnTestStudent);
+            this.Controls.Add(this.btnTestTeacher);
             this.Controls.Add(this.btnPushToTest);
             this.Controls.Add(this.txtTwitter);
             this.Controls.Add(this.label6);
@@ -212,6 +236,8 @@ namespace SchoolFormsApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnTestTeacher;
+        private System.Windows.Forms.Button btnTestStudent;
     }
 }
 
