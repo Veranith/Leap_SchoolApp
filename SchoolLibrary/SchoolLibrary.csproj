@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnglishPaper.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="IScored.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="School.cs" />
